@@ -1,58 +1,74 @@
 //Assignment Code
-var generateBtn = document.querySelector(#generate");
-console.log ("generate")
+
+var generateBtn = document.querySelector("#generate");
+console.log ('generate.btn')
 
 //custome code from here
 //Generate password function
 
+function generatePassowrd(){
+  
 
+// Creating variables for Captila letter, Lower case, Numbers, password length and empty array for userInput.
 
 var capitalLetter = "ACDEFGHIJKLMNOPARSTUVWXYZ".split("");
-var lowerLetter = "abcdefghijklmnopqurstuvwxyz".split("");
+var lowercase = "abcdefghijklmnopqurstuvwxyz".split("");
 var specialCharacter = "!@#$%^&*()" .split ("");
 var numbers = "0123456789".split("");
-var customerPassowrd = "";
+var customerPassword = "";
 var userInput=[];
 
-console.log (capitalLetter);
-console.log(specialCharacter);
+// Questions asked from customer using prompt and confirm
 
-var passwordLength = prompt ("Choose your password between 6 to 128");
+var paswdLength = prompt ("Choose your password between 6 to 128");
 
-console.log (passwordLength);
+var paswdCapitalLetter = confirm ("You want captial letters in your passowrd?");
 
-if (passwordLength < 6 || passwordLength >128) {
-alert ("Choose between 8 to 128 ");
+var pswdLowercase = confirm ("You want lowercae letters in your password?");
 
-}
+var paswdNumbers = confirm ("Do you like numbers in your pasowrd?");
 
-/*8var passwordCapitalletter = confirm ("Does your password contain capital letter");
+var paswdSpecialCharacter = confirm ("Do you like Special Characters in your password ?");
 
-if (passwordCapitalletter = true) {);
-
-var passwordLowerlLetter = confirm ("Does your password contain lower letter");
-
-if (passwordLowerlLetter = true) {function upperCaseRandom() {
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-}
+if (paswdCapitalLetter===true) {
+customerPassword = customerPasswo.concat(capitalLetter);
 
 }
 
-var passwordNumbers = confirm ("Does your password contain Numbers");
+if (paswdLowercase===true) {
+  customerPassword = customerPassword.concat(lowercase);
+  
+  }
 
-if (passwordNumbers = true) {function upperCaseRandom() {
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-}
-
-}
-var passwordSpecialCharacter = confirm ("Does your password contain Special Characters");
-
-if (passwordSpecialCharacter = true) {function upperCaseRandom() {
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 65); */
-}
-
-}
  
+  if (paswdNumber===true) {
+    customerPassword = customerPassword.concat(numbers);}
+
+}
+
+if (paswdSpecialCharacter===true) {
+  customerPassword = customerPassword.concat(specialCharacter);
+
+}
+
+console.log(fianlResult)
+
+for (var i =0; i < paswdLength;i++){
+  userInput.push (customerPassword[Math.floor(Math.random() * customerPassword.paswdLength)])
+} 
+
+function writePassword(){
+  var passowrd = generatePassword();
+  var passwordText = dcoument.querySelector("#password");
+  passwordText.value = password;
+}
+
+//Added Event lisner to genrate button
+generateBtn.addEventListener("Click".writePassowrd);
+
+
+
+
 
 
 
