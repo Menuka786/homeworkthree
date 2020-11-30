@@ -6,8 +6,8 @@ console.log("generate.btn");
 //customer code from here
 //Generate password function
 
-function generatePassowrd() {
-  // Creating variables for Captila letter, Lower case, Numbers, password length and empty array for userInput.
+function generatePassword() {
+  // Creating variables for Capital letter, Lower case, Numbers, password length and empty array for userInput.
 
   var capitalLetter = "ACDEFGHIJKLMNOPARSTUVWXYZ".split("");
   var lowercase = "abcdefghijklmnopqurstuvwxyz".split("");
@@ -21,10 +21,11 @@ function generatePassowrd() {
   var paswdLength = prompt("Choose your password between 6 to 128");
 
   var paswdCapitalLetter = confirm(
-    "You want captial letters in your password?"
+    "You want Capital letters in your password?"
   );
 
-  var paswdLowercase = confirm("You want lowercae letters in your password?");
+  var paswdLowercase = confirm("You want lowercase letters in your password?");
+
 
   var paswdNumbers = confirm("Do you like numbers in your password?");
 
@@ -40,7 +41,7 @@ function generatePassowrd() {
     customerPassword = customerPassword.concat(lowercase);
   }
 
-  if (paswdNumber) {
+  if (paswdNumbers) {
     customerPassword = customerPassword.concat(numbers);
   }
 
@@ -57,15 +58,16 @@ for (var i = 0; i < paswdLength; i++) {
 }
 return userInput.join("");
 
+
 }
 
 function writePassword() {
-  var passowrd = generatePassword();
-  var passwordText = dcoument.querySelector("#password");
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
 
-//Added Event lisner to genrate button
+//Added Event listener to generate button
 
 generateBtn.addEventListener("click", writePassword);
 
