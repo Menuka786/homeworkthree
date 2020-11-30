@@ -3,7 +3,7 @@
 var generateBtn = document.querySelector("#generate");
 console.log("generate.btn");
 
-//custome code from here
+//customer code from here
 //Generate password function
 
 function generatePassowrd() {
@@ -26,30 +26,30 @@ function generatePassowrd() {
 
   var paswdLowercase = confirm("You want lowercae letters in your password?");
 
-  var paswdNumbers = confirm("Do you like numbers in your pasowrd?");
+  var paswdNumbers = confirm("Do you like numbers in your password?");
 
   var paswdSpecialCharacter = confirm(
     "Do you like Special Characters in your password ?"
   );
 
-  if (paswdCapitalLetter === true) {
-    customerPassword = customerPasswo.concat(capitalLetter);
+  if (paswdCapitalLetter) {
+    customerPassword = customerPassword.concat(capitalLetter);
   }
 
-  if (paswdLowercase === true) {
+  if (paswdLowercase) {
     customerPassword = customerPassword.concat(lowercase);
   }
 
-  if (paswdNumber === true) {
+  if (paswdNumber) {
     customerPassword = customerPassword.concat(numbers);
   }
-}
 
-if (paswdSpecialCharacter === true) {
+
+if (paswdSpecialCharacter) {
   customerPassword = customerPassword.concat(specialCharacter);
 }
 
-console.log(fianlResult);
+console.log(customerPassword);
 
 for (var i = 0; i < paswdLength; i++) {
   userInput.push(customerPassword[Math.floor(Math.random() * customerPassword.paswdLength)]);
@@ -67,5 +67,5 @@ function writePassword() {
 
 //Added Event lisner to genrate button
 
-generateBtn.addEventListener("Click".writePassowrd);
-}
+generateBtn.addEventListener("click", writePassword);
+
