@@ -7,12 +7,12 @@ console.log("generate.btn");
 //Generate password function
 
 function generatePassword() {
-  // Creating variables for Capital letter, Lower case, Numbers, password length and empty array for userInput.
+  /*Creating variables for Capital letter, Lower case, Numbers, password length and empty array for userInput*/
 
-  var capitalLetter = "ACDEFGHIJKLMNOPARSTUVWXYZ".split("");
-  var lowercase = "abcdefghijklmnopqurstuvwxyz".split("");
-  var specialCharacter = "!@#$%^&*()".split("");
-  var numbers = "0123456789".split("");
+  var capitalLetter = "ACDEFGHIJKLMNOPARSTUVWXYZ".split("").join("");
+  var lowercase = "abcdefghijklmnopqurstuvwxyz".split("").join("");
+  var specialCharacter = "!@#$%^&*()".split("").join("");
+  var numbersValue = "0123456789".split("").join("");
   var customerPassword = "";
   var userInput = [];
 
@@ -42,7 +42,7 @@ function generatePassword() {
   }
 
   if (paswdNumbers) {
-    customerPassword = customerPassword.concat(numbers);
+    customerPassword = customerPassword.concat(numbersValue);
   }
 
 
