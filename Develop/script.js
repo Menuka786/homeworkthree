@@ -18,8 +18,8 @@ function generatePassword() {
 
   // Questions asked from customer using prompt and confirm
 
-  var paswdLength = prompt("Choose your password between 6 to 128");
-if (paswdLength < 6 || paswdLength > 128) { paswdLength = prompt ("Please choose between 6 to 128. Thank you")};
+  var paswdLength = prompt("Choose your password between 8 to 128");
+if (paswdLength < 8 || paswdLength > 128) { paswdLength = prompt ("Please choose between 8 to 128. Thank you")};
  
 var paswdCapitalLetter = confirm(
     "You want Capital letters in your password?"
