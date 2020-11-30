@@ -3,7 +3,19 @@
 *::after {
   box-sizing: border-box;
 }
+h1
+ {
+color: red;
+font-size: 50px;
 
+}
+
+h2
+
+{
+color: red;
+
+}
 html,
 body,
 .wrapper {
