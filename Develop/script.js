@@ -50,16 +50,15 @@ if (paswdSpecialCharacter) {
   customerPassword = customerPassword.concat(specialCharacter);
 }
 
-console.log(customerPassword);
 
 for (var i = 0; i < paswdLength; i++) {
-  userInput.push(customerPassword[Math.floor(Math.random() * customerPassword.paswdLength)]);
+  userInput.push(customerPassword[Math.floor(Math.random() * customerPassword.length)]);
 
 }
 return userInput.join("");
 
-
 }
+
 
 function writePassword() {
   var password = generatePassword();
