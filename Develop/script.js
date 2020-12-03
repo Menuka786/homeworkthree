@@ -34,20 +34,20 @@ var paswdCapitalLetter = confirm(
     "Do you like Special Characters in your password ?"
   );
 
-  if (paswdCapitalLetter) {
+  if (paswdCapitalLetter == true) {
     customerPassword = customerPassword.concat(capitalLetter);
   }
 
-  if (paswdLowercase) {
+  if (paswdLowercase == true) {
     customerPassword = customerPassword.concat(lowercase);
   }
 
-  if (paswdNumbers) {
+  if (paswdNumbers == true) {
     customerPassword = customerPassword.concat(numbersValue);
   }
 
 
-if (paswdSpecialCharacter) {
+if (paswdSpecialCharacter == true) {
   customerPassword = customerPassword.concat(specialCharacter);
 }
 
